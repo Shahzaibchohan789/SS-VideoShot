@@ -1,0 +1,89 @@
+/* -----------------------
+   FEATURED SLIDER
+------------------------ */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  min-width: 320px;
+  max-width: 350px;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.slide img, .slide video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+}
+
+/* -----------------------
+   BRANDS / STICKERS
+------------------------ */
+.brands {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand:hover {
+  transform: scale(1.1);
+}
+
+/* -----------------------
+   CATEGORIES
+------------------------ */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.category-card {
+  flex: 1 1 150px;
+  background: var(--card);
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--accent);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}

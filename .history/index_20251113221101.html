@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VideoWorld — Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">📸 SS VideoShot</div>
+  <nav class="links">
+    <a href="index.html" class="active">Home</a>
+    <a href="upload.html">Upload</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="actions">
+    <button id="modeToggle">🌙</button>
+    <div id="authArea"></div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Explore Feed -->
+  <div class="feed-head">
+    <h2>Explore Feed</h2>
+    <p class="muted">Upload images/videos & interact with posts.</p>
+  </div>
+  <section id="gallery" class="feed-grid"></section>
+
+  <!-- Featured Slider -->
+  <div class="feed-head">
+    <h2>Featured</h2>
+    <p class="muted">Check out the latest trending content</p>
+  </div>
+  <section class="slider" id="featuredSlider">
+    <div class="slide"><img src="assets/sample1.jpg" alt="Slide 1"></div>
+    <div class="slide"><video src="assets/sample2.mp4" controls></video></div>
+    <div class="slide"><img src="assets/sample3.jpg" alt="Slide 3"></div>
+    <div class="slide"><video src="assets/sample4.mp4" controls></video></div>
+  </section>
+
+  <!-- Trending Brands / Stickers -->
+  <div class="feed-head">
+    <h2>Top Brands & Stickers</h2>
+    <p class="muted">Our most popular content creators</p>
+  </div>
+  <section class="brands">
+    <div class="brand"><img src="assets/brand1.png" alt="Brand 1"></div>
+    <div class="brand"><img src="assets/brand2.png" alt="Brand 2"></div>
+    <div class="brand"><img src="assets/brand3.png" alt="Brand 3"></div>
+    <div class="brand"><img src="assets/brand4.png" alt="Brand 4"></div>
+    <div class="brand"><img src="assets/brand5.png" alt="Brand 5"></div>
+  </section>
+
+  <!-- Popular Categories -->
+  <div class="feed-head">
+    <h2>Popular Categories</h2>
+    <p class="muted">Explore content by type</p>
+  </div>
+  <section class="categories">
+    <div class="category-card">Travel</div>
+    <div class="category-card">Tech</div>
+    <div class="category-card">Food</div>
+    <div class="category-card">Sports</div>
+    <div class="category-card">Music</div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Video World. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Facebook">📘</a>
+    </div>
+  </div>
+</footer>
+
+<script src="global.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VideoWorld — Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main.container {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .feed-head {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .feed-head h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #ff3c7e;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .feed-head p {
+      color: #555;
+    }
+
+    .feed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    .card img, .card video {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .card p {
+      padding: 1rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .card .actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem 1rem 1rem;
+    }
+
+    .card .actions button {
+      border: none;
+      background: linear-gradient(45deg, #ff3c7e, #ff993c);
+      color: #fff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .card .actions button:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .feed-grid {
+        grid-template-columns: 1fr;
+      }
+      .card img, .card video {
+        height: 300px;
+      }
+    }
+
+    footer.footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: white;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">📸 Video World</div>
+  <nav class="links">
+    <a href="index.html" class="active">Home</a>
+    <a href="upload.html">Upload</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="actions">
+    <button id="modeToggle">🌙</button>
+    <div id="authArea"></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="feed-head">
+    <h2>Explore Feed</h2>
+    <p class="muted">Upload images/videos & interact with posts.</p>
+  </div>
+  <section id="gallery" class="feed-grid"></section>
+</main>
+
+<footer class="footer">© 2025 Video World</footer>
+<script src="global.js"></script>
+</body>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Video World. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Facebook">📘</a>
+    </div>
+  </div>
+</footer>
+
+</html> -->

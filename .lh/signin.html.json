@@ -1,0 +1,18 @@
+{
+    "sourceFile": "signin.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1763053907666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1763053907666,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\"/>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n  <title>Sign In — SS VideoShot</title>\n  <link rel=\"stylesheet\" href=\"styles.css\"/>\n</head>\n<body class=\"auth-page\">\n  <div class=\"auth-card\">\n    <h2>Login</h2>\n    <form id=\"signinForm\">\n      <input type=\"email\" id=\"siEmail\" placeholder=\"Email\" required/>\n      <input type=\"password\" id=\"siPass\" placeholder=\"Password\" required/>\n      <button type=\"submit\" class=\"btn\">Sign In</button>\n    </form>\n    <p>Don't have an account? <a href=\"signup.html\">Sign Up</a></p>\n  </div>\n<script src=\"global.js\"></script>\n</body>\n</html>\n"
+        }
+    ]
+}

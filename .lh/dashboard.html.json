@@ -1,0 +1,26 @@
+{
+    "sourceFile": "dashboard.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1763030014453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1763053890400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   <link rel=\"stylesheet\" href=\"styles.css\"/>\n </head>\n <body class=\"dashboard\">\n <header class=\"navbar\">\n-  <div class=\"logo\">📸 Video World</div>\n+  <div class=\"logo\">📸 SS VideoShot</div>\n   <nav class=\"links\">\n     <a href=\"index.html\">Home</a>\n     <a href=\"upload.html\">Upload</a>\n     <a href=\"dashboard.html\" class=\"active\">Dashboard</a>\n"
+                },
+                {
+                    "date": 1763053895711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\n <head>\n   <meta charset=\"UTF-8\"/>\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n-  <title>Dashboard — Video World</title>\n+  <title>Dashboard — SS VideoShot</title>\n   <link rel=\"stylesheet\" href=\"styles.css\"/>\n </head>\n <body class=\"dashboard\">\n <header class=\"navbar\">\n"
+                }
+            ],
+            "date": 1763030014453,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\"/>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n  <title>Dashboard — Video World</title>\n  <link rel=\"stylesheet\" href=\"styles.css\"/>\n</head>\n<body class=\"dashboard\">\n<header class=\"navbar\">\n  <div class=\"logo\">📸 Video World</div>\n  <nav class=\"links\">\n    <a href=\"index.html\">Home</a>\n    <a href=\"upload.html\">Upload</a>\n    <a href=\"dashboard.html\" class=\"active\">Dashboard</a>\n  </nav>\n  <div class=\"actions\">\n    <button id=\"modeToggle\">🌙</button>\n    <div id=\"authArea\"></div>\n  </div>\n</header>\n\n<main class=\"container\">\n  <div class=\"feed-head\">\n    <h2>Your Posts</h2>\n    <p class=\"muted\">View, like, and share your uploaded media.</p>\n  </div>\n  <section id=\"userGallery\" class=\"feed-grid\"></section>\n</main>\n\n<footer class=\"footer\">\n  <div class=\"footer-content\">\n    <p>© 2025 Video World. All rights reserved.</p>\n    <div class=\"social-links\">\n      <a href=\"#\" title=\"Facebook\">📘</a>\n      <a href=\"#\" title=\"Instagram\">📸</a>\n      <a href=\"#\" title=\"Twitter\">🐦</a>\n      <a href=\"#\" title=\"LinkedIn\">💼</a>\n    </div>\n  </div>\n</footer>\n\n<script src=\"global.js\"></script>\n</body>\n</html>\n"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload — SS VideoShot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">📸 SS VideoShot</div>
+  <nav class="links">
+    <a href="index.html">Home</a>
+    <a href="upload.html" class="active">Upload</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="actions">
+    <button id="modeToggle">🌙</button>
+    <div id="authArea"></div>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Upload Your Media</h2>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" accept="image/*,video/*" required />
+    <input type="text" id="caption" placeholder="Write a caption..." />
+    <button type="submit">Upload</button>
+  </form>
+</main>
+
+<script src="global.js"></script>
+</body>
+</html>
