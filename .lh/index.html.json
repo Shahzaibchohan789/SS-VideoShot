@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 23,
             "patches": [
                 {
                     "date": 1763029461111,
@@ -96,6 +96,10 @@
                 {
                     "date": 1763066888844,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,10 +88,10 @@\n   <div class=\"footer-content\">\n     <p>© 2025 Video World. All rights reserved.</p>\n     <div class=\"social-links\">\n       <a href=\"https://www.instagram.com/\" title=\"Instagram\">📸</a>\n-      <a href=\"twitter.com\" title=\"Twitter\">🐦</a>\n-      <a href=\"facebook.com\" title=\"Facebook\">📘</a>\n+      <a href=\"https://www.twitter.com\" title=\"Twitter\">🐦</a>\n+      <a href=\"https://www.facebook.com\" title=\"Facebook\">📘</a>\n     </div>\n   </div>\n </footer>\n \n"
+                },
+                {
+                    "date": 1763419471623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     <h2>Featured</h2>\n     <p class=\"muted\">Check out the latest trending content</p>\n   </div>\n   <section class=\"slider\" id=\"featuredSlider\">\n-    <div class=\"slide\"><img src=\"assets/sample5.jpg\" alt=\"Slide 1\"></div>\n+    <div class=\"slide\"><img src=\"assets/sample5.png\" alt=\"Slide 1\"></div>\n     <div class=\"slide\"><video src=\"assets/sample2.mp4\" controls></video></div>\n     <div class=\"slide\"><img src=\"assets/sample3.jpg\" alt=\"Slide 3\"></div>\n     <div class=\"slide\"><video src=\"assets/sample4.mp4\" controls></video></div>\n      <div class=\"slide\"><img src=\"assets/sample9.jpg\" alt=\"Slide 1\"></div>\n@@ -61,9 +61,9 @@\n     <div class=\"brand\"><img src=\"assets/brand8.png\" alt=\"Brand 8\"></div>\n     <div class=\"brand\"><img src=\"assets/brand9.png\" alt=\"Brand 9\"></div>\n     <div class=\"brand\"><img src=\"assets/brand10.png\" alt=\"Brand 10\"></div>\n     <div class=\"brand\"><img src=\"assets/brand11.png\" alt=\"Brand 11\"></div>\n-    <div class=\"brand\"><img src=\"assets/brand12.png\" alt=\"Brand 12\"></div>\n+    <div class=\"brand\"><img src=\"assets/brand1.png\" alt=\"Brand 12\"></div>\n     <!-- <div class=\"brand\"><img src=\"assets/brand13.png\" alt=\"Brand 13\"></div>\n     <div class=\"brand\"><img src=\"assets/brand14.png\" alt=\"Brand 14\"></div>\n     <div class=\"brand\"><img src=\"assets/brand15.png\" alt=\"Brand 15\"></div> -->\n \n"
                 }
             ],
             "date": 1763029461111,

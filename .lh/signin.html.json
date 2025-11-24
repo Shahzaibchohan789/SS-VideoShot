@@ -3,11 +3,27 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1763053907666,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1764012065072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,20 @@\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n   <title>Sign In — SS VideoShot</title>\n   <link rel=\"stylesheet\" href=\"styles.css\"/>\n </head>\n+<header class=\"navbar\">\n+  <div class=\"logo\">📸 SS VideoShot</div>\n+  <nav class=\"links\">\n+    <a href=\"index.html\" class=\"active\">Home</a>\n+    <a href=\"upload.html\">Upload</a>\n+    <a href=\"dashboard.html\">Dashboard</a>\n+  </nav>\n+  <div class=\"actions\">\n+    <button id=\"modeToggle\">🌙</button>\n+    <div id=\"authArea\"></div>\n+  </div>\n+</header>\n <body class=\"auth-page\">\n   <div class=\"auth-card\">\n     <h2>Login</h2>\n     <form id=\"signinForm\">\n"
+                },
+                {
+                    "date": 1764012192505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n     <a href=\"dashboard.html\">Dashboard</a>\n   </nav>\n   <div class=\"actions\">\n     <button id=\"modeToggle\">🌙</button>\n-    <div id=\"authArea\"></div>\n   </div>\n </header>\n <body class=\"auth-page\">\n   <div class=\"auth-card\">\n"
+                },
+                {
+                    "date": 1764012202436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     <a href=\"dashboard.html\">Dashboard</a>\n   </nav>\n   <div class=\"actions\">\n     <button id=\"modeToggle\">🌙</button>\n+    <div id=\"authArea\"></div>\n   </div>\n </header>\n <body class=\"auth-page\">\n   <div class=\"auth-card\">\n"
+                },
+                {
+                    "date": 1764012210853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n     <a href=\"dashboard.html\">Dashboard</a>\n   </nav>\n   <div class=\"actions\">\n     <button id=\"modeToggle\">🌙</button>\n-    <div id=\"authArea\"></div>\n   </div>\n </header>\n <body class=\"auth-page\">\n   <div class=\"auth-card\">\n"
                 }
             ],
             "date": 1763053907666,

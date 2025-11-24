@@ -118,6 +118,7 @@ if (uploadForm) {
           caption,
           user: user.name,
           likes: 0,
+          likedBy: [],
           time: new Date().toLocaleString(),
         });
         localStorage.setItem("posts", JSON.stringify(posts));
@@ -136,6 +137,7 @@ if (uploadForm) {
         caption,
         user: user.name,
         likes: 0,
+        likedBy: [],
         time: new Date().toLocaleString(),
       });
       localStorage.setItem("posts", JSON.stringify(posts));
@@ -175,7 +177,9 @@ function renderPosts(targetId, onlyUser = false) {
   }
 
   el.innerHTML = posts
-    .map((p, i) => `
+    .map((p, i) => {
+      const alreadyLiked = user && p.likedBy && p.likedBy.includes(user.name);
+      return `
       <div class="card">
         ${
           p.type === "image"
@@ -190,19 +194,32 @@ function renderPosts(targetId, onlyUser = false) {
           <small>${p.time}</small>
         </div>
         <div class="actions">
-          <button onclick="likePost(${i})">❤️ ${p.likes || 0}</button>
+          <button onclick="likePost(${i})" ${alreadyLiked ? "disabled" : ""}>❤️ ${p.likes || 0}</button>
           <button onclick="sharePost(${i})">🔗 Share</button>
         </div>
       </div>
-    `).join('');
+      `;
+    }).join('');
 }
 
 // ==========================
 // LIKE / SHARE
 // ==========================
 function likePost(i) {
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  if (!currentUser) return alert("Please login first!");
+
   let posts = JSON.parse(localStorage.getItem("posts") || "[]");
+
+  if (!posts[i].likedBy) posts[i].likedBy = [];
+
+  if (posts[i].likedBy.includes(currentUser.name)) {
+    return alert("You can only like this post once!");
+  }
+
+  posts[i].likedBy.push(currentUser.name);
   posts[i].likes = (posts[i].likes || 0) + 1;
+
   localStorage.setItem("posts", JSON.stringify(posts));
   renderPosts("gallery");
   renderPosts("userGallery", true);
